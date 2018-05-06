@@ -2,11 +2,10 @@
 #include <cctype> 
 #include <iostream> 
 #include <string> 
+
 using namespace std;
 
-#include "parse.h"
-
-string parseName() {
+static string parseThisName() {
 	char alnum;
 	string name = "";
 

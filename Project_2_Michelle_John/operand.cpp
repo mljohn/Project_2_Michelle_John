@@ -25,6 +25,6 @@ Expression* Operand::parse() {
 	if (cin.peek() == '(') {
 		cin >> paren;
 		return SubExpression::parse();
-	} else return new Variable(parseName());
+	} else return new Variable(parseThisName());
 	return 0;
 }

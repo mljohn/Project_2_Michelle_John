@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
 
 #include "expression.h"
@@ -29,7 +30,7 @@ void parseAssignments() {
 	string variable;
 	double value;
 	do {
-		variable = parseName();
+		variable = parseThisName();
 		cin >> ws >> assignop >> value >> delimiter;
 		symbolTable.insert(variable, value);
 	} while (delimiter == ',');
