@@ -15,13 +15,16 @@ void parseAssignments();
 
 int main() {
 	Expression* expression;
-	char paren, comma;
+	char paren, comma, catcher;
 	cout << "Enter expression: ";
 	cin >> paren;
 	expression = SubExpression::parse();
 	cin >> comma;
 	parseAssignments();
 	cout << "Value = " << expression->evaluate() << endl;
+
+	cin >> catcher;
+
 	return 0;
 }
 
